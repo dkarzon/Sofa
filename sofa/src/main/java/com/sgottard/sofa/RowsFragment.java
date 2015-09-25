@@ -149,10 +149,10 @@ public class RowsFragment extends BaseRowFragment implements ContentFragment {
      */
     public void setOnItemViewClickedListener(OnItemViewClickedListener listener) {
         mOnItemViewClickedListener = listener;
-        if (mViewsCreated) {
+        /*if (mViewsCreated) {
             throw new IllegalStateException(
                     "Item clicked listener must be set before views are created");
-        }
+        }*/
     }
 
     /**

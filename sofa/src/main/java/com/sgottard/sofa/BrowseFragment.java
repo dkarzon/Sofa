@@ -915,7 +915,7 @@ public class BrowseFragment extends BaseFragment {
         } else if (!mCanShowHeaders || !mShowingHeaders) {
             if (mRowsFragment != null && mRowsFragment.getView() != null) {
                 mRowsFragment.getView().requestFocus();
-            } else if (mCurrentFragment != null) {
+            } else if (mCurrentFragment != null && mCurrentFragment.getFocusRootView() != null) {
                 mCurrentFragment.getFocusRootView().requestFocus();
             }
         }
